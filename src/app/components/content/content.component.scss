@@ -1,5 +1,5 @@
 .test{
-    max-height: 80vh !important;
+    max-height: 100vh !important;
     overflow-y: scroll;
     scroll-snap-type: y mandatory !important;
 scroll-snap-type: block !important;
@@ -8,7 +8,7 @@ scroll-snap-type: block !important;
         display: none;
       }
       div{
-        height: 40vh;
-        scroll-snap-align: start;
+        height: 100vh;
+        scroll-snap-align: end;
       }
 }
