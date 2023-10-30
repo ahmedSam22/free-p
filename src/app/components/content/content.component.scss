@@ -1,0 +1,14 @@
+.test{
+    max-height: 100vh !important;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory !important;
+scroll-snap-type: block !important;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      div{
+        height: 100vh;
+        scroll-snap-align: end;
+      }
+}
