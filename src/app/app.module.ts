@@ -9,17 +9,19 @@ import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { YearsComponent } from './shared/years/years.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     YearsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: localStorage.getItem("currentLang") ||  navigator.language.split("-")[0],
@@ -30,7 +32,7 @@ import { YearsComponent } from './shared/years/years.component';
         deps: [HttpClient]
     }
     }),
-
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

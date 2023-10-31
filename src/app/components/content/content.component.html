@@ -1,34 +1,20 @@
-<section class="test" >
-    <div id="1" #1 >
-        <img src="../../../assets/images/hotelsbg.jpg" height="100%" />
-    </div>
-    <div id="2" #2>
-        two
-    </div>
-    <div id="3" #3>
-        3
-    </div>
-    <div id="4" #4>
-        4
-    </div>
-    <div id="5" #5>
-        5
-    </div>
-    <div id="6" #6 >
-        6
-    </div>
-    
-    <div id="7" #7>
-        7
-    </div>
-    
-    <div id="8" #8>
-        8
-    </div>
-    
-    <div id="9" #9>
-        9
-    </div>
-    
+<section class="test">
+  <owl-carousel-o [options]="customOptions" class="test">
+    <ng-template  carouselSlide>
+        <div class="test2">
+
+            <img src="../../../assets/images/demo.jpg" alt="" srcset="">
+        </div>
+
+</ng-template>  
+    <ng-template class="test2" carouselSlide>   <div class="test2">
+
+        s
+    </div></ng-template>  
+    <ng-template class="test2" carouselSlide>   <div class="test2">
+
+        s
+    </div></ng-template>  
+  </owl-carousel-o>
 
 </section>

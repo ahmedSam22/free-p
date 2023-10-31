@@ -1,14 +1,27 @@
 .test{
-    max-height: 100vh !important;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory !important;
-scroll-snap-type: block !important;
+    // overflow-y: scroll;
+    min-height: 100vw !important;
+    min-width: 100vh !important;
+    max-height: 100vw !important;
+    max-width: 100vh !important;
+    // scroll-snap-type: y mandatory !important;
+// scroll-snap-type: block !important;
+transform: rotate(90deg) !important;
 
-    &::-webkit-scrollbar {
-        display: none;
-      }
-      div{
-        height: 100vh;
-        scroll-snap-align: end;
-      }
+    // &::-webkit-scrollbar {
+    //     display: none;
+    //   }
+      // div{
+        // height: 100vh;
+      //   scroll-snap-align: end;
+      // }
+
+    
+}
+
+
+
+::ng-deep.test2{
+  transform: rotate(-90deg) !important;
+
 }
