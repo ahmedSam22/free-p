@@ -1,8 +1,10 @@
-// .mainbody{
-//     max-height: 100vh !important;
-//     // overflow-y: auto;
+.mainbody{
+    // max-height: 50vh !important;
+    // overflow-y: auto;
+    max-height: 100%;
+    
   
-//     &::-webkit-scrollbar {
-//         display: none;
-//       }
-// }
+    &::-webkit-scrollbar {
+        display: none;
+      }
+}

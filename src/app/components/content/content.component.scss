@@ -1,12 +1,16 @@
 .test{
     // overflow-y: scroll;
-    min-height: 100vw !important;
-    min-width: 100vh !important;
-    max-height: 100vw !important;
-    max-width: 100vh !important;
-    // scroll-snap-type: y mandatory !important;
+    // scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    max-height: 92vh !important;
+    // background-color: red;
+
+    scroll-snap-type: y mandatory !important;
+    &::-webkit-scrollbar {
+      display: none;
+    } 
 // scroll-snap-type: block !important;
-transform: rotate(90deg) !important;
+// transform: rotate(90deg) !important;
 
     // &::-webkit-scrollbar {
     //     display: none;
@@ -19,9 +23,11 @@ transform: rotate(90deg) !important;
     
 }
 
+.container {
+ 
+}
 
-
-::ng-deep.test2{
-  transform: rotate(-90deg) !important;
-
+.child {
+  scroll-snap-align: start;
+  height: 100vh;
 }
